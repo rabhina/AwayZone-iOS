@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyStoriesTVC" rowHeight="70" id="KGk-i7-Jjw" customClass="MyStoriesTVC" customModule="Awayzone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hTQ-Ul-ZPc">
+                        <rect key="frame" x="5" y="10" width="50" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="VJB-vk-9Ie"/>
+                            <constraint firstAttribute="height" constant="50" id="eYY-UZ-6hP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQL-Hb-LYd">
+                        <rect key="frame" x="63" y="10" width="216" height="49"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6z6-Uh-vti">
+                        <rect key="frame" x="287" y="10" width="25" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="i6O-7o-9G8"/>
+                        </constraints>
+                        <state key="normal" image="ICN_MENU"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKL-ny-mhd">
+                        <rect key="frame" x="5" y="5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="8TN-TV-6c2"/>
+                            <constraint firstAttribute="width" constant="60" id="VQx-fF-sGU"/>
+                        </constraints>
+                        <state key="normal" image="ICN_VIDEO_PLAY"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hTQ-Ul-ZPc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1ve-4M-X4b"/>
+                    <constraint firstAttribute="trailing" secondItem="6z6-Uh-vti" secondAttribute="trailing" constant="8" id="2sZ-hN-w4E"/>
+                    <constraint firstItem="mKL-ny-mhd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9AU-oi-G6A"/>
+                    <constraint firstItem="lQL-Hb-LYd" firstAttribute="leading" secondItem="hTQ-Ul-ZPc" secondAttribute="trailing" constant="8" id="T3V-ty-RL5"/>
+                    <constraint firstAttribute="bottom" secondItem="6z6-Uh-vti" secondAttribute="bottom" constant="10" id="UX1-PV-uNz"/>
+                    <constraint firstItem="lQL-Hb-LYd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VQq-XD-xDX"/>
+                    <constraint firstItem="6z6-Uh-vti" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="XQA-bg-XYW"/>
+                    <constraint firstItem="6z6-Uh-vti" firstAttribute="leading" secondItem="lQL-Hb-LYd" secondAttribute="trailing" constant="8" id="ata-2f-m1k"/>
+                    <constraint firstItem="mKL-ny-mhd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="bx1-Qy-aT0"/>
+                    <constraint firstAttribute="bottom" secondItem="lQL-Hb-LYd" secondAttribute="bottom" constant="10" id="rOT-8O-YzR"/>
+                    <constraint firstAttribute="bottom" secondItem="hTQ-Ul-ZPc" secondAttribute="bottom" constant="10" id="xvR-U9-feO"/>
+                    <constraint firstItem="hTQ-Ul-ZPc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="ySf-kV-XxU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLB" destination="lQL-Hb-LYd" id="Mtf-gG-evh"/>
+                <outlet property="storyIMG" destination="hTQ-Ul-ZPc" id="pU5-Ir-98o"/>
+                <outlet property="updateBTN" destination="6z6-Uh-vti" id="5TC-fK-EPK"/>
+                <outlet property="videoBtn" destination="mKL-ny-mhd" id="cay-b4-Ygc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ICN_MENU" width="27" height="17"/>
+        <image name="ICN_VIDEO_PLAY" width="30" height="30"/>
+    </resources>
+</document>
